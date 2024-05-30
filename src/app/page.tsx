@@ -3,17 +3,17 @@ import { data } from './data'
 
 export default function Home() {
   return (
-    <main className='p-28 flex flex-col items-center justify-center min-h-screen'>
-      <div className='w-[737px] flex justify-center flex-col gap-6 p-8 rounded-2xl bg-white'>
+    <main className='md:p-28 flex flex-col items-center justify-center min-h-screen'>
+      <div className='md:w-[737px] flex justify-center flex-col gap-6 pb-8   md:p-8 rounded-2xl bg-white'>
         <Image
           src={'/images/omelette.jpeg'}
           alt='omelette'
           width={1312}
           height={600}
-          className='rounded-2xl'
+          className='md:rounded-2xl m-0'
         />
 
-        <div className='space-y-3'>
+        <div className='md:px-0 px-5 space-y-3'>
           <h1 className='font-young-serif text-4xl'>Simple Omelette Recipe</h1>
           <p className='text-wenge-brown'>
             An easy and quick dish, perfect for any meal. This classic omelette
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='divide-y *:py-5 first:*:pt-0 last:*:pb-0'>
+        <div className='divide-y *:py-5 first:*:pt-0 last:*:pb-0 px-5 md:px-0'>
           <div className='space-y-3'>
             <h2 className='font-young-serif text-nutmeg text-3xl'>
               Ingredients
@@ -91,7 +91,6 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
           <div className='space-y-4'>
             <h2 className='font-young-serif text-nutmeg text-3xl'>Nutrition</h2>
             <p className='text-wenge-brown'>
