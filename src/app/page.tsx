@@ -4,13 +4,13 @@ import { data } from './data'
 export default function Home() {
   return (
     <main className='md:p-28 flex flex-col items-center justify-center min-h-screen'>
-      <div className='md:w-[737px] flex justify-center flex-col gap-6 pb-8   md:p-8 rounded-2xl bg-white'>
+      <div className='md:w-[737px] flex justify-center flex-col gap-6 pb-8 md:p-8 rounded-2xl bg-white'>
         <Image
           src={'/images/omelette.jpeg'}
           alt='omelette'
           width={1312}
           height={600}
-          className='md:rounded-2xl m-0'
+          className='md:rounded-2xl'
         />
 
         <div className='md:px-0 px-5 space-y-3'>
