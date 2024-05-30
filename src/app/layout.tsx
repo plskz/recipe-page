@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Young_Serif, Outfit } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
+const young_serif = Young_Serif({ subsets: ['latin'], weight: '400', variable: '--font-young-serif' })
 
 export const metadata: Metadata = {
   title: 'Recipe page',
@@ -15,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body
+        className={`${
+          (outfit.variable, young_serif.variable)
+        } antialiased font-outfit`}
+      >
+        {children}
+      </body>
     </html>
   )
 }
